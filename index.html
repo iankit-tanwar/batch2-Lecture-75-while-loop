@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>batch2 Lecture 75 while loop</title>
+</head>
+<body>
+
+    <ul id="ul">
+
+    </ul>
+
+
+
+    <script>
+
+        let ul = document.getElementById('ul');
+       
+
+        let name = prompt("Enter your name");
+
+        let noTimes = prompt("Enter you number");
+
+        console.log(typeof name);
+        noTimes = parseInt(noTimes);
+        console.log(typeof noTimes);
+        
+
+        let i =1;
+        while( i <= noTimes){
+
+            console.log(`hii ${name}`);
+            i++
+
+            ul.innerHTML += `<li>hii ${name} </li>`
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
